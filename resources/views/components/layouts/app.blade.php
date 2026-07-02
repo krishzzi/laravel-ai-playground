@@ -17,7 +17,8 @@
 
     @fonts
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    {{-- Livewire styles --}}
+    @livewireStyles
     @stack('styles')
 </head>
 <body class="h-full bg-slate-950 text-slate-100 antialiased font-sans">
@@ -27,5 +28,6 @@
 </div>
 
 @stack('scripts')
+@livewireScripts
 </body>
 </html>
